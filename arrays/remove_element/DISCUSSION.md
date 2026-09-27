@@ -1,4 +1,4 @@
-# Remove Element
+## [LeetCode 27. Remove Element](https://leetcode.com/problems/remove-element/)
 
 **Algorithm: Two Pointers (Два указателя)**
 
@@ -50,7 +50,7 @@ Start with `left = 0`. Move `right` from the first element to the last one. If `
 
 Важно, что элементы не удаляются физически из массива. Подходящие значения просто сжимаются в его начало. Например, из `[3, 2, 2, 3]` после обработки первые два элемента становятся `[2, 2]`, а возвращаемое значение равно `2`. Остальная часть массива не проверяется.
 
-### ✅ Шаг 4: Анализ сложности и крайних случаев
+### ✅ Шаг 4: Анализ сложности и крайние случаи
 
 **English:**
 We scan the array once, so the time complexity is `O(n)` (pronounced: "big O of n"). We use only two variables, so the extra space complexity is `O(1)` (pronounced: "big O of one"). The algorithm also works for an empty array because `range(len(nums))` performs zero iterations and `left` remains `0`.
@@ -61,3 +61,5 @@ We scan the array once, so the time complexity is `O(n)` (pronounced: "big O of 
 `O(n)` читается по-английски как **«оу оф эн»** или полнее **«биг оу оф эн»**.
 
 `O(1)` читается как **«оу оф ван»** или **«биг оу оф ван»**.
+
+`range(len(nums))` читается как **«рэйндж лэн оф намз»**. `range` означает диапазон, а `len(nums)` означает длину массива `nums`. В данном случае это диапазон индексов от `0` до `len(nums) - 1`.
