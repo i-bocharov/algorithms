@@ -1,0 +1,26 @@
+# Виртуальные окружения Python
+.venv/
+venv/
+env/
+
+# Зависимости TypeScript / Node
+node_modules/
+
+# Операционные системы
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Кэш Python
+__pycache__/
+*.py[cod]
+
+# Кэш TypeScript
+*.tsbuildinfo
+
+# Переменные окружения
+.env
+.env.*
