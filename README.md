@@ -16,12 +16,13 @@ The project is structured by topics. Each problem has its own isolated folder co
 algorithms/
 │
 ├── arrays/
-│   └── remove_duplicates/
+│   └── remove_element/
 │       ├── main.py
 │       ├── main.ts
 │       └── DISCUSSION.md  <-- Conceptual breakdown (EN/RU)
 │
-└── .gitignore
+├── .gitignore
+└── README.md
 ```
 
 ## ✍️ Discussion Format
