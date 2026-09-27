@@ -1,8 +1,8 @@
-## [LeetCode 27. Remove Element](https://leetcode.com/problems/remove-element/)
+# [LeetCode 27. Remove Element](https://leetcode.com/problems/remove-element/)
 
 **Algorithm: Two Pointers (Два указателя)**
 
-### ✅ Шаг 1: Уточнение задачи и ограничений
+## ✅ Step 1: Problem clarification and constraints / Шаг 1: Уточнение задачи и ограничений
 
 **English:**
 We need to remove all occurrences of `val` from the array in-place. The first `k` elements must contain all values that are not equal to `val`. The order of the remaining elements does not matter, and elements after `k` are ignored.
@@ -14,7 +14,7 @@ We need to remove all occurrences of `val` from the array in-place. The first `k
 
 `k` читается как **«кей»** и обозначает количество элементов, которые нужно оставить.
 
-### ✅ Шаг 2: Выбор подхода и обоснование
+## ✅ Step 2: Approach selection and justification / Шаг 2: Выбор подхода и обоснование
 
 **English:**
 We use two pointers. `right` scans every element of the array, while `left` points to the position where the next valid element should be written. When `nums[right]` is not equal to `val`, we copy it to `nums[left]` and move `left` forward.
@@ -32,7 +32,7 @@ We use two pointers. `right` scans every element of the array, while `left` poin
 
 `!==` в TypeScript читается как **«нот иквэл иквэл»**, то есть строго «не равно».
 
-### ✅ Шаг 3: Описание алгоритма
+## ✅ Step 3: Algorithm description / Шаг 3: Описание алгоритма
 
 **English:**
 Start with `left = 0`. Move `right` from the first element to the last one. If `nums[right] != val`, write `nums[right]` to `nums[left]` and increment `left`. At the end, `left` is the number of elements that are not equal to `val`, so we return it.
@@ -50,7 +50,7 @@ Start with `left = 0`. Move `right` from the first element to the last one. If `
 
 Важно, что элементы не удаляются физически из массива. Подходящие значения просто сжимаются в его начало. Например, из `[3, 2, 2, 3]` после обработки первые два элемента становятся `[2, 2]`, а возвращаемое значение равно `2`. Остальная часть массива не проверяется.
 
-### ✅ Шаг 4: Анализ сложности и крайние случаи
+## ✅ Step 4: Complexity analysis and edge cases / Шаг 4: Анализ сложности и крайние случаи
 
 **English:**
 We scan the array once, so the time complexity is `O(n)` (pronounced: "big O of n"). We use only two variables, so the extra space complexity is `O(1)` (pronounced: "big O of one"). The algorithm also works for an empty array because `range(len(nums))` performs zero iterations and `left` remains `0`.
